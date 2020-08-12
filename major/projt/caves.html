@@ -1,0 +1,192 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/style1.css">
+	</head>
+<body style="margin:0;">
+<div class="maindiv">
+<div class="first">
+
+<div class="logo">Bhopal- The city of Lakes</div>
+ <div class="menu">
+        	<ul>
+            	<li id="active"><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About</a></li>
+                <li><a href="ContactUs.html">Contact</a></li>
+                <li><a href="Map.html">Map</a></li>
+            </ul>
+        </div>
+
+       
+
+</div>
+<div class="a">
+
+
+<div class="container">
+
+  <div class="mySlidess">
+    <img src="images/a.jpg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/bhpl.jpg" style="width:100%; height:405px">
+  </div>
+
+  <div class="mySlidess">
+    <img src="images/Best.jpg" style="width:100%;height:405px">
+  </div>
+
+  <div class="mySlidess">
+    <img src="images/Sanchi.jpg" style="width:100%;height:405px">
+  </div>
+
+  <div class="mySlidess">
+    <img src="images/c.jpg" style="width:100%;height:405px">
+  </div>
+    
+  <div class="mySlidess">
+    <img src="images/b.jpg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/gallery1.jpg" style="width:100%;height:405px">
+  </div>
+    <div class="mySlidess">
+    <img src="images/moti-masjid.jpeg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/8.jpeg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/lion.jpg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/vip.jpg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/zoo.png" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/bhoj.jpg" style="width:100%;height:405px">
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+ 
+  </div>
+  <div class="second1">
+<div class="label">
+<h1>Caves in Bhopal
+
+</h1>
+</div>
+</div>
+
+<div class="second3">
+<h3><span class="count">01 - Udayagiri Caves</span></h3>
+</div>
+<div class="second2">
+<img src="images/udayagiri-caves1.jpg">
+</img>
+<p>A magnificent set of twenty sculpted caves that date back to the early 5th century CE, the Udayagiri Caves hold within their walls some of the most ancient icon drawings and carvings. The inscriptions inside the caves associate their relation with the reign of the Gupta monarchy.
+
+A significant historic monument, the caves are managed under the observation of the Archaeological Survey of India. The drawings carved depict stories of Vishnu, Lakshmi,  Shiva, and Parvati.
+
+<h5>Timings:</h5> The caves are open for exploration and visit from 09:00 AM to 06:00 PM every day.
+
+<h5>Entry Fee:</h5> The caves carry an entry fee of INR 15 per Indian and INR 200 per Foreigner.
+
+<h5>Location: </h5>The place sits near Vidisha in Madhya Pradesh
+</p>
+</div>
+ 
+
+<div class="second3">
+<h3><span class="count">02- Bhimbetka Caves</span></h3>
+</div>
+<div class="second2">
+<img src="images/Bhimbetka Caves.jpg">
+</img>
+<p>Situated at around 45 km south of Bhopal, the monumental Bhimbetka Caves have been declared a UNESCO World Heritage Site. It is believed that the caves date as back as over 30,000 years! They are home to magnificent rock shelters, along with some of the most exquisite prehistoric cave paintings in Asia.</p>
+<p>The place exudes strong aesthetic vibes, owing to the beautifully sculpted rock formations within the caves, which are fenced by dense, verdant vegetation and woods. One of the most exotic places to visit in Bhopal, the Bhimbetka Caves are truly one of their kinds, which by themselves constitute a timeless piece of art.</p>
+<p><b>Timings</b>: The caves are open to visitors throughout the week from 07:00 AM to 06:00 PM.</p>
+<p><b>Entry Fee</b>: The entry fees for Indian is INR 10 per person for Indian and INR 100 per person for Foreigners.</p>
+<p><b>Location</b>: Bhimbetka Rock Shelters, Bhojpur Raisen, Madhya Pradesh</p>
+<p><b>Distance from Bhopal Bus Stand</b>: The caves sit at a distance of 46 km from Bhopal Bus Stand.</p>
+</div>
+
+
+<div class="second3">
+<h3><span class="count">03 -Gufa Mandir</span></h3>
+</div>
+<div class="second2">
+<img src="images/Gupta Temple.jpeg">
+</img>
+<p>Gufa Mandir is located at Lalghati, near the Idgah hill. Gufa Mandir is a temple discovered by late Swami Narayandas. It is a large temple complex with many natural caves, houses beautiful idols of Lord Shiva, Ram- Laxman, Sita, Hanuman and Goddes Durga.Large number of devotees come everyday here to darshan of the deity.
+</p>
+</div>
+
+
+
+	
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlidess");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+<script>
+    var myIndex = 0;
+Second();
+
+function Second() {
+    var i;
+    var x = document.getElementsByClassName("mySlidess");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(Second, 3000);    
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

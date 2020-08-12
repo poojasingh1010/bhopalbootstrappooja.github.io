@@ -1,0 +1,188 @@
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/style1.css">
+	</head>
+<body style="margin:0;">
+<div class="maindiv">
+<div class="first">
+
+<div class="logo">Bhopal- The city of Lakes</div>
+ <div class="menu">
+        	<ul>
+            	<li id="active"><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About</a></li>
+                <li><a href="ContactUs.html">Contact</a></li>
+                <li><a href="Map.html">Map</a></li>
+            </ul>
+        </div>
+
+       
+
+</div>
+<div class="a">
+
+
+<div class="container">
+
+  <div class="mySlidess">
+    <img src="images/a.jpg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/bhpl.jpg" style="width:100%; height:405px">
+  </div>
+
+  <div class="mySlidess">
+    <img src="images/Best.jpg" style="width:100%;height:405px">
+  </div>
+
+  <div class="mySlidess">
+    <img src="images/Sanchi.jpg" style="width:100%;height:405px">
+  </div>
+
+  <div class="mySlidess">
+    <img src="images/c.jpg" style="width:100%;height:405px">
+  </div>
+    
+  <div class="mySlidess">
+    <img src="images/b.jpg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/gallery1.jpg" style="width:100%;height:405px">
+  </div>
+    <div class="mySlidess">
+    <img src="images/moti-masjid.jpeg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/8.jpeg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/lion.jpg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/vip.jpg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/zoo.png" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/bhoj.jpg" style="width:100%;height:405px">
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+ 
+  </div>
+  <div class="second1">
+<div class="label">
+<h1>Cycling
+</h1>
+
+<img src="images/Cycling.jpg">
+</img>
+</div>
+</div>
+<div class="blnk">
+
+</div>
+<div class="second1">
+<div class="label">
+<h2>
+Cycling in Bhopal
+</h2>
+</div>
+</div>
+
+<div class="second3">
+<h3><span class="count">Satpura Cycling: Multi Adventure Edition:</span></h3>
+</div>
+<div class="second2">
+
+<p> If adventure is what you seek, this cycling tour through the range of Satpuras is your best bet at experiencing the ultimate combination of the best of adrenaline rushes.
+- Cycle through the forests and hills of Satpura, and cover the highest and deepest points in the state as you ride on the uphill and downhill terrains. 
+- Start from Bhopal, move to Madhai via Tawa, and then onto Pachmarhi where you will be hitting the highest point in the state.
+- From here, the cycles will be heading downhill as you leave for Tamia Village of Patalkot, making the lowest point in the state.
+- At the end of this approximately 300 km of cycling experience, you will be brought back to Bhopal, along with your cycles to bring the experience to an end.
+
+
+
+</p>
+</div>
+ 
+
+<div class="second3">
+<h3><span class="count">Anywhere in Bhopal:</span></h3>
+</div>
+<div class="second2">
+
+<p>There are Cycles every where in bhopal.... Anyone can take ride...
+
+</p>
+</div>
+
+
+
+	
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlidess");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+<script>
+    var myIndex = 0;
+Second();
+
+function Second() {
+    var i;
+    var x = document.getElementsByClassName("mySlidess");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(Second, 3000);    
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

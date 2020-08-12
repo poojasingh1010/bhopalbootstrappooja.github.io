@@ -1,0 +1,188 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/style1.css"></head>
+<body style="margin:0;">
+<div class="maindiv">
+<div class="first">
+
+<div class="logo">Bhopal- The city of Lakes</div>
+ <div class="menu">
+        	<ul>
+            	<li id="active"><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About</a></li>
+                <li><a href="ContactUs.html">Contact</a></li>
+                <li><a href="Map.html">Map</a></li>
+            </ul>
+        </div>
+
+       
+
+</div>
+<div class="a">
+
+
+<div class="container">
+
+  <div class="mySlidess">
+    <img src="images/a.jpg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/bhpl.jpg" style="width:100%; height:405px">
+  </div>
+
+  <div class="mySlidess">
+    <img src="images/Best.jpg" style="width:100%;height:405px">
+  </div>
+
+  <div class="mySlidess">
+    <img src="images/Sanchi.jpg" style="width:100%;height:405px">
+  </div>
+
+  <div class="mySlidess">
+    <img src="images/c.jpg" style="width:100%;height:405px">
+  </div>
+    
+  <div class="mySlidess">
+    <img src="images/b.jpg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/gallery1.jpg" style="width:100%;height:405px">
+  </div>
+    <div class="mySlidess">
+    <img src="images/moti-masjid.jpeg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/8.jpeg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/lion.jpg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/vip.jpg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/zoo.png" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/bhoj.jpg" style="width:100%;height:405px">
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+ 
+  </div>
+  <div class="second1">
+<div class="label">
+<h1>Marts in Bhopal
+
+</h1>
+</div>
+</div>
+
+<div class="second3">
+<h3><span class="count">V- Mart</span></h3>
+</div>
+<div class="second2">
+<img src="images/vmart.jpg">
+</img>
+<p>
+
+<h5>V-Mart is a complete family fashion store that provides its customers true value for their money.</h5>
+
+<h5>Distance from Bhopal: 57 Km.</h5>
+
+<h5>If history fascinates you, go explore these amazing historical places in Madhya Pradesh.</h5>
+
+</p>
+</div>
+ 
+
+<div class="second3">
+<h3><span class="count">Vishal Mega Mart</span></h3>
+</div>
+<div class="second2">
+<img src="images/vishal.png">
+</img>
+<p>Vishal Mega Mart, one of the pioneers of retailing in India, is represented through its 301 brick and mortar stores across the length and breadth of the country. We strive to make the aspirations of our customers affordable.
+
+</p>
+</div>
+
+
+<div class="second3">
+<h3><span class="count">D-Mart</span></h3>
+</div>
+<div class="second2">
+<img src="images/dmart.jpg">
+</img>
+<p>DMart is a one-stop supermarket chain that aims to offer customers a wide range of basic home and personal products under one roof. Each DMart store stocks home utility products - including food, toiletries, beauty products, garments, kitchenware, bed and bath linen, home appliances and more - available at competitive prices that our customers appreciate. its 
+core objective is to offer customers good products at great value.
+
+
+</p>
+</div>
+
+	
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlidess");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+
+<script>
+    var myIndex = 0;
+Second();
+
+function Second() {
+    var i;
+    var x = document.getElementsByClassName("mySlidess");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(Second, 3000);    
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

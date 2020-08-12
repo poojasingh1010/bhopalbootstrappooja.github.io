@@ -1,0 +1,165 @@
+
+
+.first{
+    background-color: black;
+    padding-top: 14;
+    padding-bottom: 14px;
+}
+.a{
+background-repeat:no-repeat;
+	position:relative;
+	background-size:cover;
+background-position: center;
+height:405px;
+ 
+	    background-attachment: fixed;
+
+}
+.maindiv{
+	background-color: burlywood;
+	  padding-bottom: 20px;
+}
+.logo {
+	color: white;
+font-size: 45px;
+float: left;
+    padding-top: 2px;
+}
+.menu {
+	text-align:right;
+	padding:10px 0 0 0;
+}
+.menu ul {
+    padding-top: 20px;
+}
+.menu li {
+	list-style:none;
+	display:inline;
+	margin:0 10px;
+}
+.menu li a {
+	padding:0 10px;
+	font-size:18px;
+	color:floralwhite;
+	text-decoration:none;
+}
+.menu li a:hover {
+	padding:0 10px;
+	font-size:18px;
+	color:#7d6d59;
+	text-decoration:none;
+	
+}
+.first img{
+width: 1366px;
+height: 405px;
+}
+body {
+  font-family: cursive;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+  img {
+  vertical-align: middle;
+  height: 500px;
+  width: 1200px;
+}
+}
+.Text{
+	text-align: center;
+	padding: 30px 0px 30px 0px;
+	    background-color: white;
+	
+}
+
+.second{
+    text-align: center;
+    padding: 30px 0 0 70px;
+    width: 1281px;
+    font-size: 20px;
+    font-family: monospace;
+}
+.second h1{
+	
+	
+	padding: 4px 0px 14px 0;
+}
+
+.container {
+  position: relative;
+}
+
+.mySlidess {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}

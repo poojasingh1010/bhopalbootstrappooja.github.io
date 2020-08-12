@@ -1,0 +1,174 @@
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/style1.css">
+
+</head>
+<body style="margin:0;">
+<div class="maindiv">
+<div class="first">
+
+<div class="logo">Bhopal- The city of Lakes</div>
+ <div class="menu">
+        	<ul>
+            	<li id="active"><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About</a></li>
+                <li><a href="ContactUs.html">Contact</a></li>
+                <li><a href="Map.html">Map</a></li>
+            </ul>
+        </div>
+
+       
+
+</div>
+<div class="a">
+
+
+<div class="container">
+
+  <div class="mySlidess fade">
+    <img src="images/a.jpg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess fade">
+    <img src="images/bhpl.jpg" style="width:100%; height:405px">
+  </div>
+
+  <div class="mySlidess fade">
+    <img src="images/Best.jpg" style="width:100%;height:405px">
+  </div>
+
+  <div class="mySlidess fade">
+    <img src="images/Sanchi.jpg" style="width:100%;height:405px">
+  </div>
+
+  <div class="mySlidess fade">
+    <img src="images/c.jpg" style="width:100%;height:405px">
+  </div>
+    
+  <div class="mySlidess fade">
+    <img src="images/b.jpg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess fade">
+    <img src="images/gallery1.jpg" style="width:100%;height:405px">
+  </div>
+    <div class="mySlidess fade">
+    <img src="images/moti-masjid.jpeg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess fade">
+    <img src="images/8.jpeg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess fade">
+    <img src="images/lion.jpg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess fade">
+    <img src="images/vip.jpg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess fade">
+    <img src="images/zoo.png" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess fade">
+    <img src="images/bhoj.jpg" style="width:100%;height:405px">
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+ 
+  </div>
+
+<div class="second">
+<div class="label">
+<h1>ABOUT
+
+</h1>
+
+<h5>
+Bhopal is said to have been founded by the king Bhoja of the Paramara dynasty (1000-1055 CE), who ruled from his capital at Dhar. 
+According to this theory, Bhopal was originally known as Bhojpal after the king and the dam ("pal") constructed by him.
+ The Bhimbetka rock shelters are one of the famous archaeological World Heritage sites located in the Indian state of Bhopal, Madhya Pradesh. The Bhimbetka shelters exhibit the earliest traces of human life in India and deliver traces of dance from prehistoric times; Some of the Stone Age rock paintings found among the Bhimbetka rock shelters are approximately 30,000 years old.
+
+The city has a population of around 18 lakhs. Bhopal is at the centre of innovative creativity with its art galleries and visual or performing houses of excellence. With broad avenues, exquisitely laid out gardens and parks and buildings that bear an aristocratic stamp, Bhopal strikes the right cord between the new and the old. Students can look forward to sightseeing locations, exciting times at the lounges, interesting places to shop from and finally delicious local delicacies to gorge upon.
+
+Situated at the nucleus of two large lakes, the safe city of Bhopal is an ideal choice for students. 
+The airways and the railway are well connected to all major cities of India and the campus is well connected with the city. Auto rickshaws, taxis and buses are also available. Distance between the city and the airport is 20 kms while the railway station is located 12 kms away.
+
+Bhopal is fast becoming an ideal place to study as it has recently been designated as the education hub of Central India. 
+Many national institutes, including AIIMS, NIFT (National Institute of Fashion Technology), and others are soon opening their campuses in the city.
+
+Bhopal has a huge shopping cum entertainment mall with all the modern amenities and leading brands required by the youngsters.
+</h5>
+</div>
+<div class="label1">
+
+<h1> CULTURE & NIGHT LIFE </h1>
+<h5>
+Bhopal is a great confluence of old and new, it is a blend of natural beauty, historical monuments and modern urban planning. The old city is an outstanding example of a bygone era whose culture is still as lively as it used to be in the times of Nawab and Begums. The old traditional walled city is integrated with throb especially all around the chowk area where are a lot of tourist attractions are located which includes Taj-ul-Masajid, Moti Masjid Sadar Manzil and Chatori gali for the food buffs. Moving away from the old city, there is Birla Mandir, Upper lake, Van Vihar National Park, Manua Bhan Ki Tekri, Sair Sapata , Regional Museum, Indira Gandhi Rashtriya Manav Sangrahalaya and many more places which attracts tourist from world over. Bhopal is a small but rapidly growing city and is also not behind in becoming an ideal combination of old heritage and cosmopolitan culture. There is DB city, Ashima, C21 mall and more upcoming places for shopping and chilling out, there are some really good places for entertainment which also add up to the city's growing night life.
+</h5>
+
+</div>
+
+
+</div>
+
+	
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlidess");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+
+
+
+<script>
+    var myIndex = 0;
+Second();
+
+function Second() {
+    var i;
+    var x = document.getElementsByClassName("mySlidess");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(Second, 3000);    
+}
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

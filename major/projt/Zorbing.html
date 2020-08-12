@@ -1,0 +1,203 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/style1.css"></head>
+<body style="margin:0;">
+<div class="maindiv">
+<div class="first">
+
+<div class="logo">Bhopal- The city of Lakes</div>
+ <div class="menu">
+        	<ul>
+            	<li id="active"><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About</a></li>
+                <li><a href="ContactUs.html">Contact</a></li>
+                <li><a href="Map.html">Map</a></li>
+            </ul>
+        </div>
+
+       
+
+</div>
+<div class="a">
+
+
+<div class="container">
+
+  <div class="mySlidess">
+    <img src="images/a.jpg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/bhpl.jpg" style="width:100%; height:405px">
+  </div>
+
+  <div class="mySlidess">
+    <img src="images/Best.jpg" style="width:100%;height:405px">
+  </div>
+
+  <div class="mySlidess">
+    <img src="images/Sanchi.jpg" style="width:100%;height:405px">
+  </div>
+
+  <div class="mySlidess">
+    <img src="images/c.jpg" style="width:100%;height:405px">
+  </div>
+    
+  <div class="mySlidess">
+    <img src="images/b.jpg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/gallery1.jpg" style="width:100%;height:405px">
+  </div>
+    <div class="mySlidess">
+    <img src="images/moti-masjid.jpeg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/8.jpeg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/lion.jpg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/vip.jpg" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/zoo.png" style="width:100%;height:405px">
+  </div>
+  <div class="mySlidess">
+    <img src="images/bhoj.jpg" style="width:100%;height:405px">
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+ 
+  </div>
+  <div class="second1">
+<div class="label">
+<h1>Zorbing
+</h1>
+
+<img src="images/Zorbing.jpg">
+</img>
+</div>
+</div>
+<div class="blnk">
+
+</div>
+<div class="second1">
+<div class="label">
+<h2>
+Places for Zorbing near Bhopal
+</h2>
+</div>
+</div>
+
+<div class="second3">
+<h3><span class="count">01 - Upper Lake:</span></h3>
+</div>
+<div class="second2">
+
+<p> Zorbing by the shores of Upper Lake is a great choice for fun time. The largest man-made lake carrying millions of gallons of water is a popular attraction in Bhopal. You can enjoy zorbing with friends and then watch the beautiful sunset over the horizons of the humongous lake.
+
+<h5>Distance From Bhopal: 11.6 Km.</h5>
+
+<h5>Location: Near CM House, Bhopal, Madhya Pradesh.</h5>
+
+
+
+</p>
+</div>
+ 
+
+<div class="second3">
+<h3><span class="count">02 - Halali Dam:</span></h3>
+</div>
+<div class="second2">
+
+<p>Halali offers a wide range in water sports around Bhopal along with a peaceful space apt for a picnic destination near Bhopal. You can indulge in water zorbing during the daytime and relax on the shores. There is also MP tourism resort where you can replenish your energy and gulp in delicious meals after a tiring your body in the water.
+<h5>Distance from Bhopal: 41.6 Km.</h5>
+
+<h5>Location: Raisen District of Madhya Pradesh.</h5>
+
+
+</p>
+</div>
+
+
+<div class="second3">
+<h3><span class="count">03 - Kaliasot Dam:</span></h3>
+</div>
+<div class="second2">
+
+<p> Kaliasot is one such place which attracts local youth and tourists due to its mass appeal of water sports. People visit the dam on a getaway due to its proximity to the city. You can enjoy zorbing and indulge in group various games here. The place also offers scenic views which are very enticing while you enjoy a leisurely walk around the area.
+<h5>Distance From Bhopal: 20.3 Km.</h5>
+
+<h5>Location: Kolar Road, Bhopal, Madhya Pradesh.</h5>
+
+
+</p>
+</div>
+
+	
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlidess");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+<script>
+    var myIndex = 0;
+Second();
+
+function Second() {
+    var i;
+    var x = document.getElementsByClassName("mySlidess");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(Second, 3000);    
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
